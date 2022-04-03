@@ -29,8 +29,8 @@ svg{
     position: relative;
     height: 51vw;
     width: 51vw;
-    min-width: 320px;
-    min-height: 320px;
+    min-width: 400px;
+    min-height: 400px;
 }
 /* Change the color of your map */
 path{ fill: #2b9bdb; }

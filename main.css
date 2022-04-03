@@ -75,7 +75,7 @@ path{ fill: #2b9bdb; }
 .label__info{
     padding:
         calc(5px + (10 - 5) * ((100vmin - 400px) / (1200 - 400)))
-        calc(5px + (20 - 5) * ((100vmin - 400px) / (1200 - 400)))
+        calc(10px + (20 - 10) * ((100vmin - 400px) / (1200 - 400)))
     ;
     display: grid;
     justify-items: center;
@@ -84,7 +84,11 @@ path{ fill: #2b9bdb; }
 
     border-radius: 8px;
     background-color: #ffffff;
-    box-shadow: 3px 3px 9px rgba(0, 0, 0, .15);
+    box-shadow: 
+        calc(1px + (3 - 1) * ((100vmin - 400px) / (1200 - 400)))
+        calc(1px + (3 - 1) * ((100vmin - 400px) / (1200 - 400)))
+        calc(3px + (9 - 3) * ((100vmin - 400px) / (1200 - 400)))
+        rgba(0, 0, 0, .15);
 }
     .label__info-name{
         font-size: calc(12px + (26 - 12) * ((100vmin - 400px) / (1200 - 400)));

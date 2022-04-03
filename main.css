@@ -89,7 +89,7 @@ path{ fill: #2b9bdb; }
         calc(1px + (3 - 1) * ((100vmin - 400px) / (1200 - 400)))
         calc(1px + (3 - 1) * ((100vmin - 400px) / (1200 - 400)))
         calc(3px + (9 - 3) * ((100vmin - 400px) / (1200 - 400)))
-        rgba(0, 0, 0, .15)
+        rgba(0, 0, 0, .125)
     ;
 }
     .label__info-name{

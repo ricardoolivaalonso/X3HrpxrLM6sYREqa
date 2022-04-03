@@ -17,7 +17,7 @@ body{
 
 h1 {
     margin-bottom: 100px;
-    font-size: calc(16px + (32 - 16) * ((100vmin - 400px) / (1200 - 400)));
+    font-size: calc(16px + (27.5 - 16) * ((100vw - 400px) / (1200 - 400)));
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .35rem;
@@ -27,10 +27,47 @@ h1 {
 .map,
 svg{
     position: relative;
-    height: 100vmin;
-    min-width: 400px;
-    min-height: 400px;
+    height: 51vw;
+    width: 51vw;
+    min-width: 420px;
+    min-height: 420px;
 }
+@media (max-width: 1400px){
+    .map,
+    svg{
+        height: 55vw;
+        width: 55vw;
+    }
+}
+@media (max-width: 1200px){
+    .map,
+    svg{
+        height: 60vw;
+        width: 60vw;
+    }
+}
+@media (max-width: 1000px){
+    .map,
+    svg{
+        height: 70vw;
+        width: 70vw;
+    }
+}
+@media (max-width: 800px){
+    .map,
+    svg{
+        height: 80vw;
+        width: 80vw;
+    }
+}
+@media (max-width: 600px){
+    .map,
+    svg{
+        height: 90vw;
+        width: 90vw;
+    }
+}
+
 /* Change the color of your map */
 path{ fill: #2b9bdb; }
 
@@ -48,7 +85,7 @@ path{ fill: #2b9bdb; }
     align-items: center;
     justify-items: center;
     grid-auto-flow: column;
-    gap: calc(5px + (10 - 5) * ((100vmin - 400px) / (1200 - 400)));
+    gap: calc(4px + (8 - 4) * ((100vw - 400px) / (1200 - 400)));
 }
 .label__region:nth-of-type(1){
     top: 12.85%;
@@ -74,32 +111,33 @@ path{ fill: #2b9bdb; }
 }
 .label__info{
     padding:
-        calc(5px + (10 - 5) * ((100vmin - 400px) / (1200 - 400)))
-        calc(10px + (20 - 10) * ((100vmin - 400px) / (1200 - 400)))
+        calc(5px + (10 - 5) * ((100vw - 400px) / (1200 - 400)))
+        calc(10px + (20 - 10) * ((100vw - 400px) / (1200 - 400)))
     ;
     display: grid;
     justify-items: center;
     align-items: center;
     color: #000000;
 
-    border-radius: calc(4px + (8 - 4) * ((100vmin - 400px) / (1200 - 400)));
+    border-radius: calc(4px + (8 - 4) * ((100vw - 400px) / (1200 - 400)));
     background-color: #ffffff;
     box-shadow: 
-        calc(1px + (3 - 1) * ((100vmin - 400px) / (1200 - 400)))
-        calc(1px + (3 - 1) * ((100vmin - 400px) / (1200 - 400)))
-        calc(3px + (9 - 3) * ((100vmin - 400px) / (1200 - 400)))
+        calc(1px + (2 - 1) * ((100vw - 400px) / (1200 - 400)))
+        calc(1px + (2 - 1) * ((100vw - 400px) / (1200 - 400)))
+        calc(3px + (8 - 3) * ((100vw - 400px) / (1200 - 400)))
         rgba(0, 0, 0, .125)
     ;
 }
     .label__info-name{
-        font-size: calc(12px + (26 - 12) * ((100vmin - 400px) / (1200 - 400)));
+        font-size: calc(11px + (16 - 11) * ((100vw - 400px) / (1200 - 400)));
+        white-space: nowrap;
     }
     .label__info-number{
-        font-size: calc(13px + (40 - 13) * ((100vmin - 400px) / (1200 - 400)));
+        font-size: calc(12px + (21 - 12) * ((100vw - 400px) / (1200 - 400)));
         font-weight: 600;
     }
     .label__info-kw{
-        font-size: calc(10px + (22 - 10) * ((100vmin - 400px) / (1200 - 400)));
+        font-size: calc(10px + (14 - 10) * ((100vw - 400px) / (1200 - 400)));
         opacity: .5;
     }
     .label__dot{
@@ -107,16 +145,16 @@ path{ fill: #2b9bdb; }
         display: flex;
         justify-content: center;
         align-items: center;
-        width: calc(25px + (50 - 25) * ((100vmin - 400px) / (1200 - 400)));
-        height: calc(25px + (50 - 25) * ((100vmin - 400px) / (1200 - 400)));
+        width: calc(25px + (40 - 25) * ((100vw - 400px) / (1200 - 400)));
+        height: calc(25px + (40 - 25) * ((100vw - 400px) / (1200 - 400)));
         cursor: pointer;
     }
     .label__dot::before,
     .label__dot::after{
         content: '';
         position: absolute;
-        width: calc(10px + (35 - 10) * ((100vmin - 400px) / (1200 - 400)));
-        height: calc(10px + (35 - 10) * ((100vmin - 400px) / (1200 - 400)));
+        width: calc(10px + (20 - 10) * ((100vw - 400px) / (1200 - 400)));
+        height: calc(10px + (20 - 10) * ((100vw - 400px) / (1200 - 400)));
         border-radius: 50%;
         background-color: #ffffff;
     }

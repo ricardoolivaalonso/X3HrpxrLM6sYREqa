@@ -48,7 +48,7 @@ path{ fill: #2b9bdb; }
     align-items: center;
     justify-items: center;
     grid-auto-flow: column;
-    gap: 8px;
+    gap: calc(4px + (8 - 6) * ((100vmin - 400px) / (1200 - 400)));
 }
 .label__region:nth-of-type(1){
     top: 12.85%;
@@ -66,7 +66,8 @@ path{ fill: #2b9bdb; }
 .label__region:nth-of-type(4){
     grid-auto-flow: row;
     top: 79%;
-    left: 25%;
+    /* left: 25%; */
+    right: 55%;
 }
 .label__region:nth-of-type(5){
     bottom: 23.85%;
@@ -82,13 +83,14 @@ path{ fill: #2b9bdb; }
     align-items: center;
     color: #000000;
 
-    border-radius: 8px;
+    border-radius: calc(4px + (8 - 4) * ((100vmin - 400px) / (1200 - 400)));
     background-color: #ffffff;
     box-shadow: 
         calc(1px + (3 - 1) * ((100vmin - 400px) / (1200 - 400)))
         calc(1px + (3 - 1) * ((100vmin - 400px) / (1200 - 400)))
         calc(3px + (9 - 3) * ((100vmin - 400px) / (1200 - 400)))
-        rgba(0, 0, 0, .15);
+        rgba(0, 0, 0, .15)
+    ;
 }
     .label__info-name{
         font-size: calc(12px + (26 - 12) * ((100vmin - 400px) / (1200 - 400)));
@@ -114,8 +116,8 @@ path{ fill: #2b9bdb; }
     .label__dot::after{
         content: '';
         position: absolute;
-        width: calc(15px + (27 - 15) * ((100vmin - 400px) / (1200 - 400)));
-        height: calc(15px + (27 - 15) * ((100vmin - 400px) / (1200 - 400)));
+        width: calc(15px + (30 - 15) * ((100vmin - 400px) / (1200 - 400)));
+        height: calc(15px + (30 - 15) * ((100vmin - 400px) / (1200 - 400)));
         border-radius: 50%;
         background-color: #ffffff;
     }
